@@ -1,0 +1,102 @@
+@font-face{
+    font-family: 'Inter';
+    src:local('Inter-Regular')
+    url(/assets/static/Inter-Regular.ttf);
+    font-weight:400;
+}
+@font-face{
+    font-family: 'Inter';
+    src:local('Inter-Bold')
+    url(/assets/static/Inter-SemiBold.ttf);
+    font-weight:600;
+}
+@font-face{
+    font-family: 'Inter';
+    src:local('Inter-Bold')
+    url(/assets/static/Inter-Bold.ttf);
+    font-weight:700;
+}
+
+
+
+:root{
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+
+    --color-green:hsl(75, 94%, 57%);
+
+    --color-white:hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: Inter;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 100px auto;
+   background-color: var(--color-grey-900);
+
+   
+}
+.container{
+    background-color: var(--color-grey-800);
+    border-radius: 8px;
+    width: 250px;
+    padding: 2em;
+}
+.container,.bio,.links{
+   
+  
+    display: grid;
+    align-items: center;
+    justify-content: center;
+   
+  
+}
+
+.container p{
+    text-align: center;
+    margin: 0;
+}
+.container img{
+    margin: 10px auto;
+    border-radius: 50%;
+    height: 6rem;
+}
+.links button{
+    width: 17rem;
+    padding: 0.5rem;
+    margin-top: .5rem;
+    font: inherit;
+    background-color: var(--color-grey-700);
+    color: var(--color-white);
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color , color 0.25s;
+}
+.links button:hover{
+    background-color: var(--color-green);
+    color: var(--color-grey-900);
+}
+
+/*paragraph styles*/
+.name{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--color-white);
+}
+.loc{
+    color:var(--color-green);
+    font-weight: 600;
+   
+}
+.info{
+    padding-top: 15px;
+    line-height: 2em;
+    color: var(--color-white);
+
+}
+
